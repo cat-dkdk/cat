@@ -1,7 +1,9 @@
 # cat
 an HTML to generate cat
 
-### 프로젝트 소개
+---
+
+### 프로젝트 소개(KR)
 
 현재 버전: 0.00
 
@@ -17,7 +19,10 @@ an HTML to generate cat
 3. **generate 버튼**을 다시 클릭하면 **네모 상자**에 또 다른 고양이가 등장합니다.
 4. 이제 끝났습니다! 반복하기만 하십시오.
 
-### Introduction
+
+---
+
+### Introduction(EN)
 
 current version: 0.00
 
