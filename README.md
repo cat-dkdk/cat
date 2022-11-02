@@ -5,7 +5,7 @@ an HTML to generate cat
 
 ### 프로젝트 소개(KR)
 
-현재 버전: 0.00
+현재 버전: 0.02
 
 안녕하세요.
 이 프로젝트는 고양이 사진을 랜덤으로 불러오는 페이지를 제공합니다.
@@ -24,7 +24,7 @@ an HTML to generate cat
 
 ### Introduction(EN)
 
-current version: 0.00
+current version: 0.02
 
 Hello.
 This project offers a page that generates random cat image.
