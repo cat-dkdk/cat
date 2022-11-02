@@ -1,0 +1,36 @@
+body {
+  background-color: linen;
+}
+h1 {
+  text-align: center;
+  color: maroon;
+}
+.rect-img-container {
+  position: relative;
+}
+/* Magic! */
+.rect-img-container::after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+/* Magic ends! */
+.rect-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+  object-fit: cover;
+}
+.button {
+  display: block;
+  margin: 20px auto;
+  padding: 15px 32px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  background-color: maroon;
+  color: white; /* defines the color of "text" */
+  text-align: center;
+  cursor: pointer;
+}
