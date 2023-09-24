@@ -2,6 +2,13 @@
 <html>
 <head>
   <title>Random Cat Image Generator</title>
+  <style>
+    #catContainer {
+      width: 500px;
+      height: 500px;
+      border: 1px solid black;
+    }
+  </style>
 </head>
 <body>
   <h1>Click the button to see a random cat!</h1>
@@ -9,5 +16,25 @@
   <div id="catContainer">
     <!-- The cat image will be inserted here -->
   </div>
-</body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script>
+    // This code will run when the page loads
+    // fetch a cat image
+    
+    $(function() {
+        // when the button is clicked
+        $('#generateButton').click(function() {
+            // fetch a new cat image
+            $.ajax({
+            url: 'https://api.thecatapi.com/v1/images/search',
+            method: 'GET',
+            dataType: 'json',
+            success: function(data) {
+                // when the image loads, set the image src to the image url
+                $('#catContainer').html('<img src="' + data[0].url + '" />');
+            }
+            });
+        });
+        });
+    </script>
 </html>
