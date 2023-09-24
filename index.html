@@ -1,30 +1,13 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>CAT</title>
-    <link rel="stylesheet" href="cat.css">
-    <script src="cat.js"></script>
-  </head>
-  <body>
-    <h1>Cat Image Generator</h1>
-    <div class="rect-img-container">
-      <img id="cat" class="rect-img" src="cat.jpeg" alt="cat image">
-    </div>
-    <button
-      class="button"
-      onclick="catGen()"
-      >
-      Generate Cat
-    </button>
-    <p style="margin-top:80px;text-align:right;">
-      github:
-      <a
-        href="https://github.com/cat-dkdk/cat"
-        target="_blank"
-        title="github">
-        github.com/cat-dkdk/cat
-      </a>
-    </p>
-  </body>
+<html>
+<head>
+  <title>Random Cat Image Generator</title>
+</head>
+<body>
+  <h1>Click the button to see a random cat!</h1>
+  <button id="generateButton">Generate Cat</button>
+  <div id="catContainer">
+    <!-- The cat image will be inserted here -->
+  </div>
+</body>
 </html>
